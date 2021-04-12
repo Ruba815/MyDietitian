@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:id="@+id/chat"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_baseline_chat_24"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مرحبا بك"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+
+        android:padding="10dp"
+        android:layout_gravity="right"
+        />
+
+    <com.shunan.circularprogressbar.CircularProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        app:progressBackgroundColor="@color/chose"
+        app:progressBackgroundWidth="2dp"
+        app:progressColor="@color/purple_500"
+        />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/bg_com"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:orientation="vertical"
+                    android:layout_height="290dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="25sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:text="الافطار"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textSize="20sp"
+                        android:text="hdsgfjhsgdfgsdhjfgsdjhsdfgjsdg"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:id="@+id/breakfastText"
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/isEatenBreakfast"
+                        android:text="اكلت الوجبة"/>
+                    <android.widget.Button
+                        android:layout_width="100dp"
+                        android:text="تغير الوجبة"
+                        android:background="@drawable/btn"
+                        android:layout_gravity="center"
+                        android:id="@+id/breakfast"
+                        android:layout_height="30dp"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/bg_com"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:orientation="vertical"
+                    android:layout_height="290dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="25sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:text="الغداء"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textSize="20sp"
+                        android:text="hdsgfjhsgdfgsdhjfgsdjhsdfgjsdg"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:id="@+id/lunchText"
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/isEatenLunch"
+                        android:text="اكلت الوجبة"/>
+                    <android.widget.Button
+                        android:layout_width="100dp"
+                        android:text="تغير الوجبة"
+                        android:background="@drawable/btn"
+                        android:layout_gravity="center"
+                        android:id="@+id/lunch"
+                        android:layout_height="30dp"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/bg_com"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:orientation="vertical"
+                    android:layout_height="290dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="25sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:text="العشاء"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textSize="20sp"
+                        android:id="@+id/dinnerText"
+                        android:text="hdsgfjhsgdfgsdhjfgsdjhsdfgjsdg"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/isEatenDiner"
+                        android:text="اكلت الوجبة"/>
+                    <android.widget.Button
+                        android:layout_width="100dp"
+                        android:text="تغير الوجبة"
+                        android:background="@drawable/btn"
+                        android:layout_gravity="center"
+                        android:id="@+id/dinner"
+                        android:layout_height="30dp"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

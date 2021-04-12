@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectRegisterTypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#303030"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:text="ما هو نوع الحساب الذي ترغب به؟"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dietary" />
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:id="@+id/dietician"
+            android:layout_gravity="center"
+            android:text="أخصائي تغذية"
+            android:background="@drawable/btn"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bdbdbd"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="أو"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="#bdbdbd"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bmi"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:id="@+id/client"
+            android:layout_gravity="center"
+            android:text="مستخدم"
+            android:background="@drawable/btn"/>
+
+    </LinearLayout>
+</ScrollView>

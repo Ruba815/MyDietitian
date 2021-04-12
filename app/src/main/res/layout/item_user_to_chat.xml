@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dietary"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/imgProduct"/>
+
+    <RelativeLayout
+        android:layout_width="34dp"
+        android:id="@+id/chat"
+        android:layout_margin="10dp"
+        android:background="@drawable/chat_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_height="34dp">
+        <android.widget.ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_chat_24"
+            android:layout_centerInParent="true"
+            android:tint="#fff"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/imgProduct"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/name"
+            android:padding="4dp"
+            android:gravity="right"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="Name"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

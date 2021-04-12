@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientInformationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الرجاء إدخال معلوماتك الخاصة"
+            android:textColor="#0C0C0C"
+            android:textSize="24sp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="العمر"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/age"
+                android:hint="اكبر من ١٨"
+                android:digits="1234567890١٢٣٤٥٦٧٨٩٠"
+                android:gravity="center"
+                android:background="@drawable/edit_text_info"
+                android:layout_height="50dp"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الوزن"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/weight"
+                android:hint="ادخل الوزن"
+                android:gravity="center"
+                android:background="@drawable/edit_text_info"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الطول"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/height"
+                android:gravity="center"
+                android:hint="ادخل الطول"
+                android:background="@drawable/edit_text_info"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الهدف:"
+            android:textColor="#0C0C0C"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            />
+        <RadioGroup
+
+            android:id="@+id/radioGroup"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+
+           >
+
+            <RadioButton
+                android:id="@+id/radioButtonLoss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="انقاص الوزن"
+                android:textColor="#0C0C0C"
+               />
+
+            <RadioButton
+                android:id="@+id/radioButtonUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="زيادة الوزن"
+                />
+
+        </RadioGroup>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ادخل الوزن الذي تريد انقاصه/زيادته:"
+            android:textColor="#0C0C0C"
+            android:textSize="15sp"
+            android:padding="16dp"  />
+
+        <EditText
+            android:layout_width="150dp"
+            android:id="@+id/up_down"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="ادخل"
+            android:gravity="center"
+            android:background="@drawable/edit_text_info"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="172dp"
+            android:layout_height="50dp"
+            android:text="التالي"
+            android:textSize="18sp"
+            android:background="@drawable/btn"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+             />
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

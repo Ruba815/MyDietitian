@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_height="290dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:id="@+id/image"
+        android:layout_above="@+id/bts"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:text="Name"
+        android:padding="16dp"
+        android:id="@+id/name"
+        android:layout_above="@+id/bts"
+        android:background="@drawable/bg_name_recipy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/bts"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="قبول"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:id="@+id/accept"
+            android:background="#4CAF50"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

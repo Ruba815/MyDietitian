@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".ClientQuizFourActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/next"
+        android:src="@drawable/gre"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="354dp"
+        android:layout_height="72dp"
+        android:text="حدد اللحوم التي تريد أن تكون موجودة في خطتك الغذائية"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/textView8"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fis"
+                android:layout_width="111dp"
+                android:layout_height="94dp"
+
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/fis" />
+
+            <ImageView
+                android:id="@+id/che"
+                android:layout_width="112dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="94dp"
+                app:srcCompat="@drawable/che" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/met"
+                android:layout_width="112dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="94dp"
+                app:srcCompat="@drawable/met" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

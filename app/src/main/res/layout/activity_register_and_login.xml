@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/pic"
+    tools:context=".RegisterAndLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="16dp"
+        android:text="مرحبا"
+        android:textColor="#0C0C0C"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+     />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="141dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="58dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/my" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/loginChose"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="تسجيل الدخول"
+            android:textColor="#0C0C0C"
+            app:backgroundTint="@color/chose" />
+
+        <Button
+            android:id="@+id/registerChose"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="إنشاء حساب"
+            android:layout_margin="3dp"
+            android:textColor="#0C0C0C"
+            app:backgroundTint="#FFFFFF"
+        />
+    </LinearLayout>
+
+
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:ems="10"
+        android:hint="اسم المستخدم"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text"
+      />
+
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:gravity="center"
+        android:hint="البريد الالكتروني"
+         />
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text"
+        android:gravity="center"
+        android:hint="كلمة المرور"
+         />
+
+
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/gender"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="أنثى"
+            android:layout_margin="16dp"
+            android:textColor="#0C0C0C"
+           />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ذكر"
+            android:layout_margin="16dp"
+            android:textColor="#0C0C0C"
+         />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="إنشاء حساب"
+        android:layout_marginBottom="30dp"
+        android:textColor="#0C0C0C"
+        app:backgroundTint="#CC4CAF50"
+
+        />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="تسجيل الدخول"
+            android:textColor="#0C0C0C"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            app:backgroundTint="#CC4CAF50"
+
+            />
+    </LinearLayout>
+</ScrollView>

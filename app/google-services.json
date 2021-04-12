@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "754346363150",
+    "project_id": "mydieticianapp",
+    "storage_bucket": "mydieticianapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754346363150:android:f0ba1076ccdbe247d86f5f",
+        "android_client_info": {
+          "package_name": "com.appterm.mydietician"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754346363150-defonsmcuqlvcs2srl65d8u1l51ue78r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDemWrOhgaYhm5Ln2WjtN7k5vF6SzUovmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754346363150-defonsmcuqlvcs2srl65d8u1l51ue78r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

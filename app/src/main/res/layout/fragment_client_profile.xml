@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClientProfileFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الاسم"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/name"
+                android:gravity="center"
+                android:background="@drawable/edit_text_info"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="البريد الالكتروني"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/email"
+                android:gravity="center"
+                android:background="@drawable/edit_text_info"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="كلمة المرور"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/password"
+                android:gravity="center"
+                android:background="@drawable/edit_text_info"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="معلومات صحتي :"
+            android:textColor="#0C0C0C"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الوزن"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/weight"
+
+                android:gravity="center"
+                android:background="@drawable/edit_text_info"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الطول"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/height"
+                android:gravity="center"
+
+                android:background="@drawable/edit_text_info"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/BMI"
+                android:gravity="center"
+
+                android:background="@drawable/edit_text_info"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textVidew12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الهدف :"
+            android:textColor="#0C0C0C"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="زيادة زون ٢٠ كلو"
+            android:textColor="#0C0C0C"
+            android:textSize="20sp"
+            android:background="@drawable/btn"
+            android:paddingRight="22dp"
+            android:paddingLeft="22dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
